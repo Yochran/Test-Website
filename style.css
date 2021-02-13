@@ -1,0 +1,55 @@
+html {
+    align-items: center;
+    text-align: center;
+}
+
+#title, #subtitle {
+    scale: 100%;
+    transition: 1s;
+    text-decoration: none;
+}
+
+#title:hover, #subtitle:hover {
+    scale: 120%;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+#image {
+    position: absolute;
+    scale: 50%;
+    top: 35%;
+    left: 31%;
+    transition: 0.5s;
+}
+
+.options {
+    left: 33%;
+    top: 5%;
+    position: absolute;
+    z-index: 10;
+    background-color: #bcbcbc;
+    width: 35%;
+    height: 35%;
+    border-radius: 0.75rem;
+    transition: 1s;
+    scale: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+
+.options:hover {
+    scale: 110%;
+    transition: 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+}
+
+#background {
+    position: fixed;
+    top: -15%;
+    left: -15%;
+    background-size: cover;
+    width: 115%;
+    height: 115%;
+    z-index: -1;
+    transition: 2s;
+}
