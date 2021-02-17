@@ -6,4 +6,4 @@ You can view this at: https://yochran.github.io/Test-Website/
 ### Languages:
   - HTML
   - CSS
-  - TypeScript
+  - JavaScript
