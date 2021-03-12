@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Test website.</title>
+    <title>Test JS/CSS</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="main-content">
-        <div id="options">
-            <div class="content-container">
-                <h1 id="title" style="font-size: 2.5rem;">This is just a test website.</h1>
-                <h2 id="subtitle">I made this to test some simple JS.</h2>
-            </div>
-
-            <button id="button-1">Click to move this box.</button>
-            &nbsp;
-            <button id="button-2">Click to rescale this box.</button> 
-            <h2 id="position-text">Position: Default</h2>
-            <h2 id="scale-text">Scale: Default</h2>
-            <button id="reset-button">Click to reset.</button>
-            &nbsp;
-            <button id="background-button">Click to enter a background.</button>
+    <div id="loading-text">
+        <h1>Loading...</h1>
+    </div>
+    <div id="info">
+        <div id="info-box">
+            <h1 class="titles"><b>Test for JS/CSS.</b></h1>
+            <button id="info-button">Click for more info.</button>
+            <div id="spacer"> &nbsp; </div>
+            <button id="load-content">Click to load website content.</button>
         </div>
     </div>
-    <img id="background">
-    <script src="./script/main.js"></script>
+
+    <div id="content">
+        <div id="content-box">
+            <h1 class="titles"><b>Website Options:</b></h1>
+
+            <button id="theme-button">Click to enable dark theme.</button>
+            <div id="spacer"> &nbsp; </div>
+            <button id="load-info">Click to load website info.</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/index.js"></script>
 </body>
