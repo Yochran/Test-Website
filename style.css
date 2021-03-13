@@ -12,7 +12,6 @@ body {
     position: fixed;
     top: 40%;
     left: 45%;
-    scale: 100%;
 }
 
 #info {
@@ -26,16 +25,16 @@ body {
     transition: 1s;
     top: 36.5%;
     left: 40%;
-    scale: 100%;
+    opacity: 100%;
 }
 
 #content-box {
     position: absolute;
-    scale: 100%;
     transition: 1s;
     top: 36.5%;
     left: 40%;
     scale: 0%;
+    opacity: 0%;
 }
 
 .titles {
