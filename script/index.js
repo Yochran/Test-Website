@@ -44,10 +44,10 @@ function loadInfo() {
     const loadingText = document.getElementById("loading-text");
 
     setTimeout(() => {
-        loadingText.style.scale = "0%";
+        loadingText.style.opacity = "0%";
     }, 250);
 
-    websiteContent.style.scale = "0%";
+    websiteContent.style.opacity = "0%";
     contentLoaded = false;
 
     setTimeout(() => {
@@ -64,7 +64,7 @@ function loadContent() {
     infoLoaded = false;
 
     setTimeout(() => {
-        websiteContent.style.scale = "100%";
+        websiteContent.style.opacity = "100%";
         contentLoaded = true;
     }, 500);
 }
