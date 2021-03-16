@@ -38,7 +38,7 @@ function getTime() {
 
 // Functions \\
 function loadInfo() {
-    const websiteInfo = document.getElementById("info");
+    const websiteInfo = document.getElementById("info-box");
     const websiteContent = document.getElementById("content-box");
 
     const loadingText = document.getElementById("loading-text");
@@ -47,11 +47,11 @@ function loadInfo() {
         loadingText.style.opacity = "0%";
     }, 250);
 
-    websiteContent.style.opacity = "0%";
+    websiteContent.style.left = "-125%";
     contentLoaded = false;
 
     setTimeout(() => {
-        websiteInfo.style.opacity = "100%";
+        websiteInfo.style.left = "40%";
         infoLoaded = true;
     }, 500);
 }
@@ -60,11 +60,11 @@ function loadContent() {
     const websiteContent = document.getElementById("content-box");
     const websiteInfo = document.getElementById("info");
 
-    websiteInfo.style.opacity = "0%";
+    websiteInfo.style.left = "125%";
     infoLoaded = false;
 
     setTimeout(() => {
-        websiteContent.style.opacity = "100%";
+        websiteContent.style.left = "40%";
         contentLoaded = true;
     }, 500);
 }
