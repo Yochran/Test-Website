@@ -19,6 +19,7 @@ body {
     transition: 0.5s;
     top: 36.5%;
     left: 40%;
+    opacity: 0%;
 }
 
 #content-box {
@@ -26,6 +27,7 @@ body {
     transition: 0.5s;
     top: 36.5%;
     left: 40%;
+    opacity: 0%;
 }
 
 .titles {
