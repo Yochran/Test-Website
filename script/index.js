@@ -43,27 +43,29 @@ function loadInfo() {
 
     const loadingText = document.getElementById("loading-text");
 
-    setTimeout(() => {
-        loadingText.style.opacity = "0%";
-    }, 250);
-
     websiteContent.style.left = "-125%";
     contentLoaded = false;
 
     setTimeout(() => {
+        loadingText.style.opacity = "0%";
+    }, 250);
+
+    setTimeout(() => {
         websiteInfo.style.left = "40%";
+        websiteInfo.style.opacity = "100%";
         infoLoaded = true;
     }, 500);
 }
 
 function loadContent() {
     const websiteContent = document.getElementById("content-box");
-    const websiteInfo = document.getElementById("info");
+    const websiteInfo = document.getElementById("info-box");
 
     websiteInfo.style.left = "125%";
     infoLoaded = false;
 
     setTimeout(() => {
+        websiteContent.style.opacity = "100%";
         websiteContent.style.left = "40%";
         contentLoaded = true;
     }, 500);
